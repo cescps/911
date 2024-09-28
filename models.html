@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Models.</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="911.png" />
+    <style>
+        body.dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        p::selection {
+            background-color: red;
+        }
+
+        .underline-link {
+            text-decoration: underline;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 25px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 21px;
+            width: 21px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #4cd964;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #4cd964;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(25px);
+        }
+    </style>
+</head>
+
+<body class="dark-mode">
+
+    <div class="max-w-3xl mx-auto py-12 px-6">
+        <h1 class="text-4xl font-bold leading-tight mb-4">Models.</h1>
+
+        <label class="switch">
+            <input type="checkbox" onclick="toggleMode()">
+            <span class="slider round"></span>
+        </label>
+
+        <br><br><br><br>
+
+
+        <ul class="list-disc ml-6 text-xl"> <!-- Increased list items to text-xl -->
+            <li><strong>718 Boxster</strong></li>
+            <li><strong>718 Boxster S</strong></li>          
+            <li><strong>718 Cayman</strong></li>
+            <li><strong>718 Cayman S</strong></li>
+
+          <br>
+          
+            <li><strong>911 Carrera</strong></li>
+            <li><strong>911 Carrera S</strong></li>
+            <li><strong>911 Carrera Cabriolet</strong></li>
+            <li><strong>911 Carrera S Cabriolet</strong></li>
+            <li><strong>911 Carrera 4</strong></li>
+            <li><strong>911 Carrera 4S</strong></li>
+            <li><strong>911 Carrera 4 Cabriolet</strong></li>
+            <li><strong>911 Carrera 4S Cabriolet</strong></li>
+            <li><strong>911 Carrera GTS</strong></li>
+            <li><strong>911 Carrera GTS Cabriolet</strong></li>
+            <li><strong>911 Carrera 4 GTS</strong></li>
+            <li><strong>911 Carrera 4 GTS Cabriolet</strong></li>
+            <li><strong>911 Targa 4 GTS</strong></li>
+            <li><strong>911 GT3</strong></li>
+            <li><strong>911 R</strong></li>
+            <li><strong>911 Targa 4</strong></li>
+            <li><strong>911 Targa 4S</strong></li>
+            <li><strong>911 Turbo</strong></li>
+            <li><strong>911 Turbo S</strong></li>
+            <li><strong>911 Turbo Cabriolet</strong></li>
+            <li><strong>911 Turbo S Cabriolet</strong></li>
+
+          <br>
+          
+           <li><strong>Cayenne</strong></li>
+            <li><strong>Cayenne Platinum Edition</strong></li>
+            <li><strong>Cayenne S</strong></li>
+            <li><strong>Cayenne GTS</strong></li>
+            <li><strong>Cayenne Turbo</strong></li>
+            <li><strong>Cayenne Turbo S</strong></li>
+            <li><strong>Cayenne S E-Hybrid</strong></li>
+            <li><strong>Cayenne S E-Hybrid Platinum Edition</strong></li>
+          
+           <br>
+     
+            <li><strong>Macan</strong></li>
+            <li><strong>Macan S</strong></li>
+            <li><strong>Macan GTS</strong></li>
+            <li><strong>Macan Turbo</strong></li>
+          
+            <br>
+          
+            <li><strong>Panamera</strong></li>
+            <li><strong>Panamera 4</strong></li>
+            <li><strong>Panamera 4 Sport Turismo</strong></li>
+            <li><strong>Panamera 4 Executive</strong></li>
+            <li><strong>Panamera 4S</strong></li>
+            <li><strong>Panamera 4S Sport Turismo</strong></li>
+            <li><strong>Panamera 4S Executive</strong></li>
+            <li><strong>Panamera 4 E-Hybrid</strong></li>
+            <li><strong>Panamera 4 E-Hybrid Sport Turismo</strong></li>
+            <li><strong>Panamera 4 E-Hybrid Executive</strong></li>
+            <li><strong>Panamera Turbo S E-Hybrid</strong></li>
+            <li><strong>Panamera Turbo S E-Hybrid Executive</strong></li>
+            <li><strong>Panamera Turbo</strong></li>
+            <li><strong>Panamera Turbo Sport</strong></li>
+            <li><strong>Panamera Turbo Executive</strong></li>
+
+                      <br>
+
+         
+          <li><strong>Taycan</strong></li>
+            <li><strong>Taycan 4S</strong></li>
+            <li><strong>Taycan GTS</strong></li>
+            <li><strong>Taycan Turbo</strong></li>
+            <li><strong>Taycan Cross Turismo</strong></li>
+            <li><strong>Taycan GTS Sport Turismo</strong></li>
+
+          <br>
+          
+           
+        </ul>
+      
+      <br><br><br>
+      
+         
+<a href="https://www.911.cat" class="text-base">← Go back</a>
+
+
+    </div>
+
+    <script>
+        function toggleMode() {
+            const body = document.querySelector('body');
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+        }
+    </script>
+
+</body>
+
+</html>
